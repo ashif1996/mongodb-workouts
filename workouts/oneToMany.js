@@ -6,11 +6,11 @@ const postSchema = new mongoose.Schema(
     {
         title: {
             type: String,
-            required: true
+            required: true,
         },
         content: {
             type: String,
-            required: true
+            required: true,
         },
         author: {
             type: mongoose.Schema.Types.ObjectId,
@@ -20,7 +20,7 @@ const postSchema = new mongoose.Schema(
     },
     {
         timestamps: true,
-    }
+    },
 );
 
 const Post = mongoose.model("Post", postSchema);
@@ -28,7 +28,7 @@ const Post = mongoose.model("Post", postSchema);
 
 // Create a post with a user reference
 
-const createPost = async () => {
+const createPost = async (req) => {
     const userId = req.session.user._id;
 
     try {

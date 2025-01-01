@@ -2,9 +2,11 @@
 
 const User = require("./models/User");
 
-const deleteUser = async () => {
+const deleteUser = async (req) => {
+    const email = req.session.user.email;
+
     try {
-        const deletedUser = await User.findOneAndDelete({ email: "alice@example.com" });
+        const deletedUser = await User.findOneAndDelete({ email });
         console.log("Deleted User:", deletedUser);
     } catch (error) {
         console.error("Error deleting user:", error.message);

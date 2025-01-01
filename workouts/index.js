@@ -25,7 +25,7 @@ const User = mongoose.model("User", userSchema);
 
 
 // Test query with the indexed field
-const findUserByEmail = async () => {
+const findUserByEmail = async (req) => {
     const email = req.session.user.email;
 
     try {
