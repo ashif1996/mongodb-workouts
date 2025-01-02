@@ -20,7 +20,8 @@ Explore this comprehensive [MongoDB Roadmap](https://roadmap.sh/mongodb) to mast
 ✅ Techniques for scaling and optimizing MongoDB  
 ✅ Real-world applications and best practices  
 
-> Click the link below to dive into the roadmap:  
+> Additional Resources:  
 🎯 [MongoDB Roadmap](https://roadmap.sh/mongodb)  
+📚 [MongoDB Notes](https://bronotes.super.site/week-8-mongodb)  
 
 Happy Learning! 💻  
